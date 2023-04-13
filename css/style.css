@@ -1,16 +1,32 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: "Inria",sans-serif;
+    font-family: "Inria Sans",sans-serif;
     scroll-behavior: smooth;
 }
 
-.main {
-    width: 100%;
-    height: 100vh;
+/* body {
     background-color: #F8F7FD;
     color: #2E2E59;
+} */
+
+.main {
+    background-color: #F8F7FD;
+    color: #2E2E59;
+    width: 100%;
+    height: 100vh;
 }
+
+.dark-mode {
+    background-color: #2E2E59;
+    color: #F8F7FD;
+}
+
+/* Dark mode styles */
+/* body.dark-mode {
+    background-color: #2E2E59;
+    color: #F8F7FD;
+  } */
 
 .nav {
     width: 100%;
@@ -21,9 +37,14 @@
     margin: auto;
 }
 
+.nav a{
+    color: currentColor;
+    text-decoration: none;
+}
+
 .nav .title{
     width: auto;
-    padding: 0 75px;
+    padding: 0 100px;
     font-size: 48px;
     font-weight: bold;
 }
@@ -33,8 +54,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 75px;
-    gap: 25px;
+    padding: 0 100px;
 }
 
 .nav .nav-right .nav-list {
@@ -42,15 +62,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 10px;
 }
 
 .nav .nav-right .nav-list ul li {
-    font-size: 30px;
+    font-size: 24px;
     padding: 10px;
     font-weight: bold;
     list-style: none;
     display: inline-block;
 }
-.theme-toggler {
+.nav .nav-right .theme-toggler {
+    padding-left: 10px;
+}
+.theme-toggler-icon {
     fill: currentColor;
 }

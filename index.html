@@ -3,23 +3,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dinama Profile Page</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Sans">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="...">
 </html>
 <body>
     <div class="main">
         <div class="nav">
-            <span class="title"> <a href="#">me</a></span>
+            <span class="title">
+                <a href=""><img src="assets/img/logo-title.png" alt="logo-title" height="48px">
+                <a href="">me</a>
+            </span>
             <div class="nav-right">
                 <div class="nav-list">
                     <ul>
                         <li><a href="./projects/">projects</a></li>
-                        <li><a href="#">notes</a></li>
-                        <li><a href="#">logs</a></li>
+                        <li><a href="./notes/">notes</a></li>
+                        <li><a href="./logs/">logs</a></li>
                     </ul>
                 </div> 
                 <span class="toggler-place">
-                    <a href="#"><svg class="theme-toggler" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm2 0c0-5.514 4.486-10 10-10v20c-5.514 0-10-4.486-10-10z"></path></svg></a>
+                    <a href=""><svg class="theme-toggler" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm2 0c0-5.514 4.486-10 10-10v20c-5.514 0-10-4.486-10-10z"></path></svg></a>
                 </span>
                 <div class="hamburger-menu">
                   <div class="line"></div>
@@ -29,8 +33,32 @@
             </div>         
         </div>
         <div class="content">
-            
+            <div class="photo-section">
+                <div class="photo-container">
+                    <img src="assets/img/logo-title.png" alt="profile-photo" width="300px">
+                </div>
+            </div>
+            <div class="about-section">
+                <div class="about-container">
+                    <div class="text-container">
+                        <h1>Hello, I'm Dima Dinama</h1>
+                        <p>I'm just a regular person who likes Formula 1, Tech Stuff, and some Python Programming. <br>
+                            I love trying new things. Currently I'm not working at tech company and not using my programming skills on my job. <br>
+                            But I'm looking for opportunity to work on tech stuff, especially doing jobs with python programming language like web development, computer vision, or machine learning.
+                        </p>
+                    </div>
+                    <div class="handles-container">
+                        <p>Learn more about me on : </p>
+                        <a href="https://github.com/dmaharika/" target="_blank"><i class="fab fa-github icon"></i></a>
+                        <a href="https://linkedin.com/in/dmaharika/" target="_blank"><i class="fab fa-linkedin icon"></i></a>
+                        <a href="https://facebook.com/dmaharika/" target="_blank"><i class="fab fa-facebook icon"></i></a>
+                        <a href="https://instagram.com/dmaharika/" target="_blank"><i class="fab fa-instagram icon"></i></a>
+                        <a href="https://twitter.com/dmaharika/" target="_blank"><i class="fab fa-twitter icon"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
+        <footer><p>&#169; 2023 - Dima Dinama. See the source on <a href="https://github.com/dmaharika/dmaharika.github.io" target="_blank">Github</a></p></footer>
     </div>
-    <script src="js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>

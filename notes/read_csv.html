@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dinama Project Page</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Sans">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+</html>
+<body>
+    <div class="main">
+        <div class="nav">
+            <span class="title">
+                <a href=""><img src="../assets/img/logo-title.png" alt="logo-title" height="48px">
+                <a href="./">notes</a>
+            </span>
+            <div class="nav-right">
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="../">home</a></li>
+                        <li><a href="../projects/">projects</a></li>
+                        <li><a href="../logs/">logs</a></li>
+                    </ul>
+                </div> 
+                <span class="toggler-place">
+                    <a href=""><svg class="theme-toggler" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm2 0c0-5.514 4.486-10 10-10v20c-5.514 0-10-4.486-10-10z"></path></svg></a>
+                </span>
+                <div class="hamburger-menu">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>  
+            </div>         
+        </div>
+        <div class="content page">
+            <div class="content-title">
+                <h1>How to read and write CSV in Python</h1>
+            </div>
+            <div class="content-description">
+                <p>Python is a powerful and versatile programming language, widely used for data analysis, machine learning, and other data-related tasks. 
+                    One of the most common formats for storing and sharing data is the Comma Separated Values (CSV) file format. 
+                    In this article, we will learn how to read and write CSV files in Python.
+                </p>
+                <h2>Reading CSV files in Python</h2>
+                <p>To read a CSV file in Python, we need to use the csv module, which provides a simple and efficient way to work with CSV files. 
+                    Here's a simple example of how to read a CSV file using Python:
+                </p>
+                <pre>
+                    <code>
+                        import csv
+
+                        with open('data.csv', 'r') as f:
+                            reader = csv.reader(f)
+                            for row in reader:
+                                print(row)
+                    </code>
+                </pre>
+                <p>In this example, we first import the csv module. We then open the file data.csv in read mode using the open() function. 
+                    We then create a csv.reader object, which allows us to iterate over the rows in the CSV file. 
+                    Finally, we loop over each row in the CSV file and print it.
+                </p>
+                <h2>Writing CSV files in Python</h2>
+                <p>To write a CSV file in Python, we again use the csv module. 
+                    Here's a simple example of how to write a CSV file using Python:
+                </p>
+                <pre>
+                    <code>
+                        import csv
+
+                        data = [
+                            ['Name', 'Age', 'City'],
+                            ['John', 25, 'New York'],
+                            ['Jane', 30, 'Chicago'],
+                            ['Bob', 35, 'San Francisco']
+                        ]
+
+                        with open('data.csv', 'w', newline='') as f:
+                            writer = csv.writer(f)
+                            writer.writerows(data)
+                    </code>
+                </pre>
+                <p>In this example, we first define the data that we want to write to the CSV file as a list of lists. 
+                    Each inner list represents a row in the CSV file. We then open the file data.csv in write mode using the open() function. 
+                    We also pass the argument newline='' to the open() function to ensure that the CSV file is written correctly. 
+                    We then create a csv.writer object, which allows us to write the rows to the CSV file. 
+                    Finally, we call the writerows() method on the csv.writer object to write the data to the CSV file.
+                </p>
+                <h2>Conclusion</h2>
+                <p>In this article, we learned how to read and write CSV files in Python using the csv module. 
+                    Reading and writing CSV files is an essential task in data analysis and other data-related tasks. 
+                    With the csv module in Python, working with CSV files becomes a simple and efficient task.
+                </p>
+            </div>
+        </div>
+        <footer><p>&#169; 2023 - Dima Dinama. See the source on <a href="https://github.com/dmaharika/dmaharika.github.io" target="_blank">Github.</a>
+            Also learn more about me on :
+            <a href="https://github.com/dmaharika/" target="_blank"><i class="fab fa-github icon" style="margin-left: 0.25em;"></i></a>
+            <a href="https://linkedin.com/in/dmaharika/" target="_blank"><i class="fab fa-linkedin icon" style="margin-left: 0.25em;"></i></a>
+            <a href="https://facebook.com/dmaharika/" target="_blank"><i class="fab fa-facebook icon" style="margin-left: 0.25em;"></i></a>
+            <a href="https://instagram.com/dmaharika/" target="_blank"><i class="fab fa-instagram icon" style="margin-left: 0.25em;"></i></a>
+            <a href="https://twitter.com/dmaharika/" target="_blank"><i class="fab fa-twitter icon" style="margin-left: 0.25em;"></i></a></p></footer>
+    </div>
+    <script src="../assets/js/script.js"></script>
+</body>

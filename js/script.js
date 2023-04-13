@@ -14,3 +14,11 @@ themeToggler.addEventListener("click", function() {
         localStorage.setItem("theme", "light");
     }
 });
+
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navbarMenu = document.querySelector('.nav-list');
+
+hamburgerMenu.addEventListener('click', () => {
+  navbarMenu.classList.toggle('active');
+  console.log("Clicked!"); // add a console log to check if the event listener is working
+});

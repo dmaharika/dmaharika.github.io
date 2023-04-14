@@ -112,12 +112,6 @@ footer {
     flex-shrink: 0;
     text-align: justify;
 }
-/* 
-a:hover {
-    background-color: #2E2E59;
-    border-radius: 5px;
-    color: #F8F7FD;
-} */
 
 .content {
     width: 100%;
@@ -127,7 +121,6 @@ a:hover {
 .content .photo-section{
     width: 40%;
     height: auto;
-    /* background-color: aqua; */
 }
 
 .photo-container{
@@ -141,7 +134,6 @@ a:hover {
 .content .about-section{
     width: 60%;
     height: auto;
-    /* background-color: aquamarine; */
 }
 
 .about-container{
@@ -168,21 +160,12 @@ a:hover {
     gap: 1em;
     font-size: 1.25em;
     font-weight: bold;
-    /* background-color: blue; */
-    /* color: currentColor; */
 }
 
 .handles-container .icon {
     font-size: 1.5em;
-    /* margin-right: 1em; */
     text-decoration: none;
-    /* color: currentColor; */
 }
-
-/* .icon:hover, .icon:active{
-    color: currentColor;
-} */
-
 
 /* Non Home Page */
 
@@ -222,6 +205,11 @@ a:hover {
     padding: 15px 0;
 }
 
+
+.content .content-description ul li {
+    font-weight: normal;
+}
+
 pre {
     height: auto;
     background-color: #f8f8f8;
@@ -237,6 +225,47 @@ pre {
 code {
     font-family: Menlo, Consolas, monospace;
     color:#2E2E59;
+}
+
+/* LOGS PAGE  */
+table {
+    padding: 15px;
+}
+
+table td{
+    border-top: 2px dashed;
+    color: currentColor;
+    padding: 15px 30px;
+}
+
+/* PROJECTS PAGE  */
+
+.card-placeholder {
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.card-content {
+    width: auto;
+    height: auto;
+    display: block;
+    justify-content: center;
+}
+
+.card-content .card-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-content .card-title {
+    width: 100%;
+    padding: 0 10px;
 }
 
 @media screen and (max-width: 900px) {
@@ -300,5 +329,14 @@ code {
 
     .text-container p {
         width: 100%;
+    }
+
+    .card-placeholder {
+        flex-direction: column;
+    }
+
+    .card-content .card-image {
+        justify-content: left;
+        padding-left: 15px;
     }
   }

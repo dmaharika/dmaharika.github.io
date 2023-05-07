@@ -59,6 +59,7 @@ a{
 
 .nav-right{
     width: auto;
+    max-width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -269,6 +270,14 @@ table td{
 }
 
 @media screen and (max-width: 900px) {
+    .nav .title {
+        padding-left: 25px;
+    }
+
+    .nav .nav-right {
+        padding-right: 25px;
+    }
+    
     .nav-list {
         display: none;
     }
@@ -338,5 +347,23 @@ table td{
     .card-content .card-image {
         justify-content: left;
         padding-left: 15px;
+    }
+
+    .handles-container {
+        display: block;
+    }
+
+    footer {
+        padding: 0 10%;
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+    .title img {
+        display: none;
+    }
+
+    img {
+        width: 100%;
     }
   }
